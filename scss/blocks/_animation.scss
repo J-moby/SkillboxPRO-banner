@@ -1,0 +1,306 @@
+@keyframes textFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes Sss {
+  0% {
+    opacity: 0;
+    transform: translate(360%, 60%) scale(5);
+    color: $color-white;
+    filter: blur(2px);
+  }
+
+  10% {
+    opacity: 1;
+    color: #9548bd;
+  }
+
+  20% {
+    color: #13aed7;
+  }
+
+  30% {
+    color: #d812ae;
+  }
+
+  40% {
+    color: #537ccb;
+  }
+
+  50% {
+    color: $color-conifer;
+    transform: translate(360%, 60%) scale(5);
+  }
+
+  60% {
+    color: $color-cornflower-blue;
+  }
+
+  70% {
+    filter: blur(0);
+    color: #d812ae;
+  }
+
+  80% {
+    color: #537ccb;
+  }
+
+  90% {
+    color: #9548bd;
+  }
+
+  100% {
+    opacity: 1;
+    color: $color-white;
+    transform: translate(0) scale(1);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes pro {
+  0% {
+    border-color: $color-conifer;
+  }
+
+  10% {
+    border-color: #9548bd;
+  }
+
+  20% {
+    border-color: #d812ae;
+  }
+
+  30% {
+    border-color: #13aed7;
+  }
+
+  40% {
+    border-color: #537ccb;
+  }
+
+  50% {
+    border-color: $color-conifer;
+  }
+
+  60% {
+    border-color: #d812ae;
+  }
+
+  70% {
+    border-color: #13aed7;
+  }
+
+  90% {
+    border-color: #537ccb;
+  }
+
+  100% {
+    border-color: $color-conifer;
+  }
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes transLeft {
+  0% {
+    transform: translateX(16%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes textColor {
+  0% {
+    opacity: 1;
+    color: #7e0fff;
+  }
+  50% {
+    color: #0fffc1;
+  }
+  100% {
+    opacity: 1;
+    color: #7e0fff;
+  }
+}
+
+@keyframes glow {
+  0% {
+    filter: blur(3vw);
+    background-position: 0% 50%;
+  }
+  50% {
+    filter: blur(4vw);
+    background-position: 100% 50%;
+  }
+  100% {
+    filter: blur(3vw);
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    transform: scale(0, 0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(2, 2);
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    transform: translate(-50%, -50%) scale(0, 0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(5, 5);
+    opacity: 0;
+  }
+}
+
+@keyframes blurLight {
+  0% {
+    filter: blur(200px);
+    transform: translate(0, 0);
+  }
+
+  33% {
+    transform: translate(0, -50px);
+  }
+
+  66% {
+    filter: blur(180px);
+    transform: translate(-50px, 0);
+  }
+
+  100% {
+    filter: blur(220px);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes label {
+  0% {
+    clip-path: polygon(0 50%, 100% 50%, 100% 50%, 0 50%);
+  }
+
+  50% {
+    clip-path: polygon(0 100%, 100% 50%, 100% 50%, 0 0);
+  }
+
+  100% {
+    clip-path: polygon(0 100%, 100% 100%, 100% 0, 0 0);
+  }
+}
+
+@keyframes fadeInRightBtn {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  70% {
+    transform: translateX(0);
+    max-width: 38px;
+  }
+
+  100% {
+    max-width: 100%;
+    transform: translateX(0);
+  }
+}

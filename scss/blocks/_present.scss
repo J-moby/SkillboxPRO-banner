@@ -1,0 +1,83 @@
+.present {
+  $root: &;
+  opacity: 0;
+  overflow: auto;
+  pointer-events: none;
+  // overflow: hidden;
+  // А нужна ли тут прокрутка?
+
+  transition: opacity $tr-300 0.3s;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero--active & {
+    opacity: 1;
+    pointer-events: all;
+
+    &__close-btn {
+      pointer-events: all;
+      opacity: 1;
+      transform: translate(-50%, 0);
+
+      transition: transform $tr-300 0.3s, opacity $tr-300 0s;
+    }
+  }
+
+  &__close-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid $color-white-60;
+    background-color: transparent;
+    border-radius: 60px;
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 25px;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, 100px);
+    color: $color-white-60;
+    pointer-events: none;
+
+    transition: transform $tr-300, opacity $tr-300;
+
+    &:before {
+      content: "▼";
+      top: 1px;
+      position: relative;
+      font-size: 40px;
+    }
+
+    &:hover {
+      transform: translate(-50%, 0) rotate(-360deg) scale(1.3);
+
+      transition: transform $tr-500, opacity $tr-300;
+    }
+  }
+
+  &__card {
+    overflow: hidden;
+    pointer-events: none;
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: auto;
+    max-height: 0;
+
+    transition: max-height 1s linear;
+
+    p {
+      display: flex;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}
